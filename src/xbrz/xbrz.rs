@@ -1,4 +1,5 @@
-// zBRZ Texture Scaling for use with Macroquad
+/// xBRZ Texture Scaling for use with Macroquad
+///
 use libc::*;
 
 #[repr(C)]
