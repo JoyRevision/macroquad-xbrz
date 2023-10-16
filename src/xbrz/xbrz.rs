@@ -1,10 +1,10 @@
-/// xBRZ Texture Scaling for use with Macroquad
-///
+// xBRZ Texture Scaling for use with Macroquad
+
 use libc::*;
 
 #[repr(C)]
 #[allow(non_camel_case_types)]
-pub enum _ColorFormat {
+enum _ColorFormat {
     RGB,
     ARGB,
     ARGB_UNBUFFERED,
@@ -13,7 +13,7 @@ pub enum _ColorFormat {
 #[link(name = "./xbrz")]
 #[allow(non_snake_case)]
 extern "C" {
-    pub fn XbrzScale(
+    fn XbrzScale(
         factor: usize,
         src: *mut u8,
         trg: *mut u8,
